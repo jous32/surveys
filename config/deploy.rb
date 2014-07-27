@@ -1,9 +1,9 @@
 require "rvm/capistrano"
-#require "bundler/capistrano"
+require "bundler/capistrano"
 #184.73.213.204
 server "162.243.18.190", :web, :app, :db, primary: true
 
-set :application, "survey"
+set :application, "surveys"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}" 
 set :deploy_via, :remote_cache
