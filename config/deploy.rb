@@ -17,6 +17,7 @@ set :branch, "master"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
+ssh_options[:keys]="/home/#{user}/.ssh/id_rsa"
 #ssh_options[:auth_methods] = ["publickey"]
 #ssh_options[:keys] = ["/Users/josevasquez/Documents/aws_jose.pem"]
 
