@@ -3,6 +3,8 @@ require "bundler/capistrano"
 #184.73.213.204
 server "162.243.18.190", :web, :app, :db, primary: true
 
+set :rvm_bin_path, "$HOME/bin"
+
 set :application, "surveys"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}" 
