@@ -3,7 +3,7 @@ require "bundler/capistrano"
 #184.73.213.204
 server "162.243.18.190", :web, :app, :db, primary: true
 
-set :rvm_bin_path, "$HOME/bin"
+set :rvm_type, :system  # Copy the exact line. I really mean :system here*
 
 set :application, "surveys"
 set :user, "deployer"
